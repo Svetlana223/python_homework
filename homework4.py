@@ -37,8 +37,8 @@ bushes = int(input('Введите количество кустов: '))
 berries = [int(input('Введите количество ягод на кустах: ')) for i in range(bushes)]
 count = 0
 for i in range(len(berries)):
-    if count < berries[i-1] + berries[i] + berries[i + 1]:
-        count = berries[i-1] + berries[i] + berries[i + 1]
+    if count < (i-1) + i+ (i + 1):
+        count = (i-1) + i+ (i + 1)
 print(count)
 
 
